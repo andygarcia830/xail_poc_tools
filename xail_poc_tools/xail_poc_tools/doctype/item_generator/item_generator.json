@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-03 15:28:20.300066",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zmfg",
+  "target_item_group",
+  "counter",
+  "name_prefix",
+  "batch_size",
+  "default_unit_of_measure"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zmfg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "target_item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Target Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "counter",
+   "fieldtype": "Int",
+   "label": "counter"
+  },
+  {
+   "fieldname": "name_prefix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name Prefix",
+   "reqd": 1
+  },
+  {
+   "default": "1000",
+   "fieldname": "batch_size",
+   "fieldtype": "Int",
+   "label": "Batch Size",
+   "reqd": 1
+  },
+  {
+   "default": "Nos",
+   "fieldname": "default_unit_of_measure",
+   "fieldtype": "Link",
+   "label": "Default Unit Of Measure",
+   "options": "UOM",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-08 15:36:57.440302",
+ "modified_by": "Administrator",
+ "module": "XAIL POC Tools",
+ "name": "Item Generator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
