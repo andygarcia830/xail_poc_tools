@@ -1,7 +1,7 @@
 # Copyright (c) 2024, Xurpas AI Lab and contributors
 # For license information, please see license.txt
 
-import frappe, timeit
+import frappe, timeit, time
 from frappe.model.document import Document
 
 
@@ -37,6 +37,7 @@ def generate_items(item_group, counter, prefix, batch_size, default_uom):
 			generator_doc = frappe.get_doc('Item Generator')
 			generator_doc.counter = counter
 			generator_doc.save()
+			time.sleep(1)
 	generator_doc = frappe.get_doc('Item Generator')
 	generator_doc.counter = counter
 	generator_doc.save()
